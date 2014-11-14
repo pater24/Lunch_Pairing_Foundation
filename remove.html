@@ -18,29 +18,19 @@
 
     <div class="row links">
       <div class="large-12 columns">
-        <a href="./add.html" class="tiny round button">Add User</a>
-        <!-- <a href="./remove.html" class="tiny round button">Remove User</a> -->
+        <a href="./index.html" class="tiny round button">Back</a>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row box remove">
       <div class="large-12 columns">
-      	<div class="panel">
-          <!-- <button type="button" onclick="showAllUsers()">Refresh</button> -->
-          <table class="users">
-            <thead>
-              <tr>
-                <td>First Name</td>
-                <td>Last Name</td>
-                <td>Email</td>
-                <td>Team</td>
-                <td></td>
-              </tr>
-            </thead>
-            <tbody class="content">
-            </tbody>
-          </table>
-      	</div>
+        <div class="panel">
+          <form id="removeForm">
+            <label>Email:</label>
+            <input type="text" id="removeEmail">
+            <button type="button" onclick="removeUser()">Remove User</button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -49,10 +39,6 @@
     <script src="js/pairing.js"></script>
     <script>
       $(document).foundation();
-
-      $(document).ready(function() {
-        showAllUsers();
-      });
     </script>
   </body>
 </html>

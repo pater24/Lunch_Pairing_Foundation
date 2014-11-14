@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FN | Lunch</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/pairing.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>FN Lunch Pairing</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+      	<div class="panel">
+	        <form id="addForm">
+            <div class="row">
+              <div class="large-12 columns">
+                <label>First Name:</label>
+                <input type="text" id="firstName">
+              </div>
+              <div class="large-12 columns">
+                <label>Last Name:</label>
+                <input type="text" id="lastName">
+              </div>
+            </div>
+            <label>Email:</label>
+            <input type="text" id="email">
+            <label>Team:</label>
+            <select id="team">
+              <option value="engineering">Engineering</option>
+              <option value="business">Business Development</option>
+              <option value="ops">Operations</option>
+              <option value="policy">Policy</option>
+            </select>
+            <button type="button" onclick="addUser()">Add New User</button>
+          </form>
+      	</div>
+      </div>
+      <div class="large-4 columns">
+        <div class="panel">
+          <form id="removeForm">
+            <label>Email:</label>
+            <input type="text" id="removeEmail">
+            <button type="button" onclick="removeUser()">Remove User</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/pairing.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
