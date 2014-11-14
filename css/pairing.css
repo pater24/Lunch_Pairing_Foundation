@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  color: purple;
 }
 
 .box {
@@ -12,4 +13,8 @@ h1 {
 
 .remove {
   margin-top: 35px;
+}
+
+.tiny.round.button {
+  background-color: purple;
 }
